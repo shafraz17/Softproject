@@ -1,0 +1,31 @@
+import React, { Component } from 'react';
+import { AppRegistry, View,StyleSheet,Text
+,ImageBackground
+} from 'react-native';
+
+export default class DisplayAnImage extends Component {
+  render() {
+    return (
+      
+        <ImageBackground style={styles.img}
+          source={require('./app/img/back.jpg')}
+        >
+        <Text>Hi..............!!!!!!!!!!</Text>
+        </ImageBackground>
+        
+        
+      
+    );
+  }
+}
+
+// skip this line if using Create React Native App
+AppRegistry.registerComponent('DisplayAnImage', () => DisplayAnImage);
+
+
+const styles = StyleSheet.create({
+  img: {
+    width:'auto',
+    height: 800,
+    },
+  })
