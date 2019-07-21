@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text,AsyncStorage, Keyboard } from 'react-native';
-import { Card, CardItem, Icon, Right, Container } from 'native-base';
+import { Card, CardItem, Icon, Right, Container, Footer, FooterTab, Button } from 'native-base';
 
 
 
@@ -51,6 +51,23 @@ class Launch extends Component {
         </Card>
                   
       </View>
+
+      <Footer>
+          <FooterTab>
+            <Button>
+              <Icon name="home" />
+            </Button>
+            <Button>
+              <Icon name="camera" />
+            </Button>
+            <Button active>
+              <Icon active name="navigate" />
+            </Button>
+            <Button>
+              <Icon name="person" />
+            </Button>
+          </FooterTab>
+        </Footer>
     </Container>
     );
   }
